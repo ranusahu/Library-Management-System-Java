@@ -54,12 +54,12 @@ public class LibraryManagementSystem {
                     String author = sc.nextLine();
 
                     books.add(new Book(id, title, author));
-                    System.out.println("✅ Book added successfully!");
+                    System.out.println(" Book added successfully!");
                     break;
 
                 case 2:
                     if (books.isEmpty()) {
-                        System.out.println("📚 No books available.");
+                        System.out.println(" No books available.");
                     } else {
                         System.out.println("\n--- Book List ---");
                         for (Book b : books) {
@@ -82,7 +82,7 @@ public class LibraryManagementSystem {
                     }
 
                     if (!found) {
-                        System.out.println("❌ Book not found!");
+                        System.out.println(" Book not found!");
                     }
                     break;
 
@@ -101,12 +101,12 @@ public class LibraryManagementSystem {
                     }
 
                     if (!removed) {
-                        System.out.println("❌ Book not found!");
+                        System.out.println(" Book not found!");
                     }
                     break;
 
                 case 5:
-                    System.out.println("Thank you for using Library System 😊");
+                    System.out.println("Thank you for using Library System ");
                     sc.close();
                     System.exit(0);
 
@@ -116,3 +116,4 @@ public class LibraryManagementSystem {
         }
     }
 }
+
